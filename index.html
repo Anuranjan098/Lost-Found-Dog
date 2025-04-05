@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost & Found Dog NGO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>Lost & Found Dog NGO</header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#lost">Lost Dogs</a>
+        <a href="#found">Found Dogs</a>
+        <a href="#report">Report</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to Lost & Found Dog NGO</h2>
+        <p>We help reunite lost dogs with their owners.</p>
+    </section>
+
+    <section id="lost">
+        <h2>Lost Dogs</h2>
+        <div class="dog-listing">Dog 1 - Last seen in XYZ area</div>
+        <div class="dog-listing">Dog 2 - Last seen in ABC colony</div>
+    </section>
+
+    <section id="found">
+        <h2>Found Dogs</h2>
+        <div class="dog-listing">Dog A - Found near DEF park</div>
+        <div class="dog-listing">Dog B - Found in LMN street</div>
+    </section>
+
+    <section id="report">
+        <h2>Report a Lost or Found Dog</h2>
+        <form id="reportForm" action="/submit" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="myname" required><br><br>
+            <label for="details">Details:</label>
+            <textarea id="details" name="details" required></textarea><br><br>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="confirmationMessage" style="display:none; color:green;">Thank you! Your report has been submitted.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@dogngo.org</p>
+        <p>Phone: +62500580417</p>
+    </section>
+
+    <footer>
+        &copy; 2025 Lost & Found Dog NGO
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
